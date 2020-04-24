@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__business" width="23.173" height="23.173" viewBox="0 0 23.173 23.173">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#c8cfd8}
+        </style>
+    </defs>
+    <g id="prefix__Group_6208" data-name="Group 6208" transform="translate(5.793)">
+        <path id="prefix__Path_11193" d="M22.293 18.587a5.793 5.793 0 1 1 5.793-5.793 5.8 5.8 0 0 1-5.793 5.793zm0-8.111a2.317 2.317 0 1 0 2.317 2.317 2.321 2.321 0 0 0-2.317-2.317z" class="prefix__cls-1" data-name="Path 11193" transform="translate(-16.5 -7)"/>
+    </g>
+    <g id="prefix__Group_6209" data-name="Group 6209" transform="translate(0 13.904)">
+        <path id="prefix__Path_11194" d="M35.435 22.269a1.739 1.739 0 0 1-1.735-1.738v-1.158a2.9 2.9 0 0 0-2.9-2.9H20.373a2.9 2.9 0 0 0-2.9 2.9v1.159a1.738 1.738 0 1 1-3.476 0v-1.159A6.378 6.378 0 0 1 20.373 13H30.8a6.378 6.378 0 0 1 6.373 6.373v1.159a1.739 1.739 0 0 1-1.738 1.737z" class="prefix__cls-1" data-name="Path 11194" transform="translate(-14 -13)"/>
+    </g>
+</svg>

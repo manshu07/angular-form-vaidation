@@ -1,0 +1,133 @@
+:root {
+    --primaryColor: #2bbf7f;
+    --secondaryColor: #373737;
+    --textColor: 112, 112, 112;
+    --whiteColor: #fff;
+    --borderRadius: 2px;
+    --padding: 5px;
+    --white-low-opacity: rgba(255, 255, 255, 0.9);
+    --menuBorder: #e4e4e4;
+    --yellowColor: #f3d044;
+}
+@media screen and (max-width: 1199px) {
+   
+    #cssmenu > ul > li > a {
+        padding: 0 25px;
+    }
+}
+@media screen and (max-width: 991px) {
+    header {
+        justify-content: flex-start;
+    }
+    #cssmenu {
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+    }
+    #cssmenu ul {
+        width: 100%;
+        display: none;
+        background-image: linear-gradient(28deg, #2bcf85 32%, #21b773 119%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        position: absolute;
+        top: 90px;
+        z-index: 99;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    #cssmenu ul li {
+        width: 100%;
+        text-align: center;
+    }
+    #cssmenu > ul > li {
+        margin: 30px 0;
+    }
+    #cssmenu > ul > li > a {
+        display: inline-block;
+        padding: 5px 20px;
+        border: none;
+    }
+    #cssmenu .button {
+        width: 55px;
+        height: 46px;
+        position: absolute;
+        right: 5%;
+        top: 20px;
+        cursor: pointer;
+        z-index: 999;
+    }
+    #cssmenu .button:after {
+        position: absolute;
+        top: 22px;
+        right: 20px;
+        display: block;
+        height: 8px;
+        width: 20px;
+        border-top: 2px solid var(--whiteColor);
+        border-bottom: 2px solid var(--whiteColor);
+        content: "";
+    }
+    #cssmenu .button:before {
+        -webkit-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        display: block;
+        height: 2px;
+        width: 20px;
+        background: var(--whiteColor);
+        content: "";
+    }
+    #cssmenu .button.menu-opened:after {
+        -webkit-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        top: 23px;
+        border: 0;
+        height: 2px;
+        width: 19px;
+        background: var(--whiteColor);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    #cssmenu .button.menu-opened:before {
+        top: 23px;
+        background: var(--whiteColor);
+        width: 19px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    #cssmenu li.menu-btn {
+        padding-left: 0;
+    }
+    #cssmenu li.menu-btn a {
+        background: transparent;
+        border: 1px solid var(--whiteColor);
+        border-radius: 2px;
+        border-right: 1px solid var(--whiteColor) !important;
+        color: var(--white-low-opacity);
+        padding: 14px 60px;
+    }
+    .login-box-panel{margin: 0 auto;}
+}
+@media screen and (max-width: 767px) {
+    #cssmenu .button {
+        right: 0;
+    }
+
+    .terms-privacy{margin: 30px auto 0;}
+    .copy-right.second{margin: 35px auto 0;}
+}

@@ -1,0 +1,39 @@
+<div class="login-panel">
+  <section class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-none d-sm-none d-md-none d-lg-block">
+          <div class="login-image">
+            <img src="assets/images/login-thumb.svg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <div class="login-box-panel">
+            <div class="login-box">
+              <h4>Log In</h4>
+              <form [formGroup]="loginForm">
+                <div class="form-row" [ngClass]="{ 'error-container': submitted && f.emailId.errors }">
+                  <input #usernameref formControlName="emailId" class="form-control" type="text" placeholder="Email">
+                  <p *ngIf="submitted && f.emailId.errors?.required">Email is required</p>
+                </div>
+                <div class="form-row mr-b-20" [ngClass]="{ 'error-container': submitted && f.password.errors }">
+                  <input #passwordref formControlName="password" class="form-control" type="Password" placeholder="Password">
+                  <p *ngIf="submitted && f.password.errors?.required">Password is required</p>
+                </div>
+                <div class="forget-link mr-b-20"><a href="/">Forgot your password?</a></div>
+                <div class="btn-login">
+                  <a (click)="onSubmit()" href="javascript:void(0)" title="log in">Log in</a>
+                </div>
+                <div class="register-btn">
+                  <p>Are you a new client?</p>
+                  <a routerLink="/register" title="Registe now">Register now</a>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
